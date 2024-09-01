@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/garimaPortfolio/static/css/main.73c37108.css",
+    "main.js": "/garimaPortfolio/static/js/main.3212ad61.js",
+    "static/media/BlinkName.mp4": "/garimaPortfolio/static/media/BlinkName.fa1d4f7c43bc3f9ada83.mp4",
+    "static/media/agriculture.jpg": "/garimaPortfolio/static/media/agriculture.0aae1d412ad57f861b2b.jpg",
+    "static/media/Uchat.png": "/garimaPortfolio/static/media/Uchat.e76a0b4270bc1dba2b15.png",
+    "static/media/Taketest.png": "/garimaPortfolio/static/media/Taketest.c79f819385fefece5f28.png",
+    "static/media/Car.jpg": "/garimaPortfolio/static/media/Car.56beffa83674d9366346.jpg",
+    "index.html": "/garimaPortfolio/index.html",
+    "main.73c37108.css.map": "/garimaPortfolio/static/css/main.73c37108.css.map",
+    "main.3212ad61.js.map": "/garimaPortfolio/static/js/main.3212ad61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73c37108.css",
+    "static/js/main.3212ad61.js"
+  ]
+}
