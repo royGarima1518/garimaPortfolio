@@ -1,0 +1,201 @@
+// .navbar {
+//     background-color: var(--yellow-theme-nav-background-color);
+//     height: 80px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 1.2rem;
+//     position: sticky;
+
+//     &__container {
+//         display: flex;
+//         align-items: center;
+//         width: 100%;
+//         height: inherit;
+//         padding: 0 20px;
+//         flex: 1;
+
+//         &__logo{
+//             color: var(--yellow-theme-main-color);
+//             cursor: pointer;
+//         }
+
+//         &__menu{
+//             display: flex;
+//             list-style: none;
+//             text-align: center;
+        
+//             &__item{
+//                 line-height: 40px;
+//                 margin-right: 1.5rem;
+//                 font-size: 1.6rem;
+
+//                 &::after{
+//                  content: '';
+//                  display: block;
+//                  height: 3px;   
+//                  width: 0;
+//                  background: transparent;
+//                  transition: all 0.5s ease;
+//                 }
+
+//                 &:hover::after{
+//                     width: 100%;
+//                     background: var(--yellow-theme-main-color);
+//                 }
+
+//                 &__links{
+//                     color: var(--yellow-theme-main-color);
+//                     text-decoration: none;
+//                     padding: 0.5rem;
+//                 }
+//             }
+
+//         }
+//     }
+// }
+
+// .nav-icons{
+//     display: none;
+// }
+
+// @media only screen and (max-width :768px) {
+//     .navbar__container__menu{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         width: 100%;
+//         border-top: 1px solid #fff;
+//         position: absolute;
+//         top: 80px;
+//         left: 10%;
+//         opacity: 1;
+//         transition: all 0.5s ease;
+
+
+//         &.active{
+//             background: #181818;
+//             left: 0px;
+//             opacity: 1;
+//         }
+
+//         &__item{
+//             border-bottom: 1px solid #282828;
+//             margin: 0pc;
+//             padding: 20px 0px;
+//         }
+//     }
+
+//     .nav-icons{
+//         display: block;
+//         cursor: pointer;
+//         color: var(--yellow-theme-main-color);
+//         padding-right: 20px;
+//     }
+// }
+
+
+
+.navbar {
+    background-color: var(--yellow-theme-nav-background-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000; // Ensures the navbar is above other content
+
+    &__container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: inherit;
+        padding: 0 20px;
+        flex: 1;
+        justify-content: space-between; // Ensure logo and menu are spaced correctly
+
+        &__logo {
+            color: var(--yellow-theme-main-color);
+            cursor: pointer;
+        }
+
+        &__menu {
+            display: flex;
+            list-style: none;
+            text-align: center;
+
+            &__item {
+                line-height: 40px;
+                margin-right: 1.5rem;
+                font-size: 1.6rem;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    width: 0;
+                    background: transparent;
+                    transition: all 0.5s ease;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    background: var(--yellow-theme-main-color);
+                }
+
+                &__links {
+                    color: var(--yellow-theme-main-color);
+                    text-decoration: none;
+                    padding: 0.5rem;
+                }
+            }
+
+        }
+    }
+}
+
+.nav-icons {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar__container__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        border-top: 1px solid #fff;
+        position: absolute;
+        top: 80px;
+        left: 0; // Ensure menu is aligned correctly
+        background: #181818; // Dark background for mobile menu
+        opacity: 1;
+        transition: all 0.5s ease;
+        max-height: 0; // Hide menu initially
+        overflow: hidden; // Prevent scrolling
+        visibility: hidden; // Hide menu from screen readers
+        z-index: 999; // Ensure the menu is above other content
+
+        &.active {
+            max-height: 500px; // Adjust as needed
+            visibility: visible;
+        }
+
+        &__item {
+            border-bottom: 1px solid #282828;
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+        }
+    }
+
+    .nav-icons {
+        display: block;
+        cursor: pointer;
+        color: var(--yellow-theme-main-color);
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,95 @@
+.resume {
+    padding: 2rem;
+    background-color: #1d1d1d;
+    min-height: 100vh;
+    
+    .pageHeaderContent {
+        margin-bottom: 2rem;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__experience {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            
+            .timeline__experience__header-text {
+                font-size: 5rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                color: #fff; // Make text color white for better contrast on dark background
+                text-align: center; // Center align text
+                background: linear-gradient(135deg, #f39c12, #f1c40f); // Gradient background
+                -webkit-background-clip: text; // Clip background to text
+                -webkit-text-fill-color: transparent; // Make text color transparent
+                padding: 0.5rem; // Add padding around the text
+                border-radius: 8px; // Round the corners of the background
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); // Add shadow to the text
+            }
+        }
+    }
+}
+
+.vertical-timeline-element {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+
+    .vertical-timeline-element-title-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .vertical-timeline-element-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .vertical-timeline-element-subtitle {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: #666;
+            margin: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #444;
+            margin: 0;
+        }
+    }
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -5px;
+        width: 10px;
+        height: 100%;
+        background: var(--yellow-theme-main-color);
+        border-radius: 5px;
+    }
+}
+
+.vertical-timeline {
+    .vertical-timeline-element--work {
+        border-left: 2px solid var(--yellow-theme-main-color);
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        .timeline__experience {
+            width: 90%;
+        }
+    }
+}
