@@ -69,4 +69,5 @@ export default {
       },
     },
     detectRetina: true,
-  };
+  }
+  // eslint-disable-next-line
