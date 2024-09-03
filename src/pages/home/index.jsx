@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from 'react-router-dom';
 import './style.scss';
 import { Animate } from "react-simple-animate";
-import { FaLinkedin, FaGithub, FaTwitter, FaCodepen, FaMailBulk, FaCode } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaMailBulk,  } from 'react-icons/fa';
 import { SiLeetcode, SiCodingninjas } from 'react-icons/si';
 
 const Home = () => {

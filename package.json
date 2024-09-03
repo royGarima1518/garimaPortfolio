@@ -24,7 +24,6 @@
   "devDependencies": {
     "gh-pages": "^6.1.1"
   },
-  "homepage": "https://royGarima1518.github.io/garimaPortfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
