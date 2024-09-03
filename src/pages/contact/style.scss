@@ -1,3 +1,95 @@
+// .contact {
+//     padding: 3rem;
+//     background-color: #1d1d1d; // Dark background color
+//     min-height: 100vh;
+//     color: #f0f0f0; // Light text color for contrast
+
+//     .contact__content {
+//         max-width: 800px;
+//         margin: 0 auto;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         .contact__form {
+//             background: #2c2c2c; // Slightly lighter dark background for the form
+//             padding: 2rem;
+//             border-radius: 10px;
+//             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+//             width: 100%;
+//             max-width: 600px;
+
+//             h3.contact__form__title {
+//                 font-size: 2rem;
+//                 font-weight: 700;
+//                 margin-bottom: 1rem;
+//                 color: var(--yellow-theme-main-color);
+//             }
+
+//             .contact__form__input-group {
+//                 margin-bottom: 1.5rem;
+
+//                 label {
+//                     display: block;
+//                     font-size: 1rem;
+//                     color: #f0f0f0;
+//                     margin-bottom: 0.5rem;
+//                 }
+
+//                 input,
+//                 textarea {
+//                     width: 100%;
+//                     padding: 0.75rem;
+//                     border: 1px solid #444;
+//                     border-radius: 5px;
+//                     background: #333;
+//                     color: #f0f0f0;
+//                     font-size: 1rem;
+//                     transition: border-color 0.3s ease;
+
+//                     &:focus {
+//                         border-color: var(--yellow-theme-main-color);
+//                         outline: none;
+//                     }
+//                 }
+
+//                 textarea {
+//                     resize: vertical;
+//                 }
+//             }
+
+//             .contact__form__submit {
+//                 padding: 0.75rem 1.5rem;
+//                 font-size: 1.1rem;
+//                 background: var(--yellow-theme-main-color);
+//                 color: #1d1d1d; // Dark text color for contrast
+//                 border: none;
+//                 border-radius: 5px;
+//                 cursor: pointer;
+//                 transition: background-color 0.3s ease, transform 0.3s ease;
+
+//                 &:hover {
+//                     background: #f0f0f0;
+//                     color: #1d1d1d;
+//                     transform: scale(1.05);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media only screen and (max-width: 768px) {
+//     .contact__form {
+//         padding: 1.5rem;
+//     }
+// }
+
+
+
+
+
+
+
 .contact {
     padding: 3rem;
     background-color: #1d1d1d; // Dark background color
@@ -8,8 +100,28 @@
         max-width: 800px;
         margin: 0 auto;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+
+        .contact__info {
+            margin-bottom: 2rem;
+            text-align: center;
+
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            a {
+                color: var(--yellow-theme-main-color);
+                font-size: 1.2rem;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
 
         .contact__form {
             background: #2c2c2c; // Slightly lighter dark background for the form
@@ -73,6 +185,12 @@
                     color: #1d1d1d;
                     transform: scale(1.05);
                 }
+            }
+
+            .contact__form__status {
+                margin-top: 1rem;
+                font-size: 1rem;
+                color: #f0f0f0;
             }
         }
     }
